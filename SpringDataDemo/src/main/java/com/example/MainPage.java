@@ -16,8 +16,8 @@ import com.vaadin.ui.VerticalLayout;
 
 public class MainPage extends VerticalLayout implements View{
 	
-	//@Autowired
-	//PersonRepository personRepository;
+	@Autowired
+	PersonRepository personRepository;
 	
 	public static final String VIEW_NAME = "";
 	
