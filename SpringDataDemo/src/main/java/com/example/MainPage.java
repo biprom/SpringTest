@@ -1,9 +1,12 @@
 package com.example;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.dao.PersonRepository;
+import com.model.Person;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.spring.annotation.SpringView;
@@ -16,8 +19,7 @@ import com.vaadin.ui.VerticalLayout;
 
 public class MainPage extends VerticalLayout implements View{
 	
-	@Autowired
-	PersonRepository personRepository;
+	
 	
 	public static final String VIEW_NAME = "";
 	
@@ -28,11 +30,15 @@ public class MainPage extends VerticalLayout implements View{
 				Label label = new Label("Dit is de hoofdpagina");
 				addComponent(label);
 				
+				
+				
+				
 	}
 
 	@Override
 	public void enter(ViewChangeEvent event) {
 		
+	
 		
 	}
 
