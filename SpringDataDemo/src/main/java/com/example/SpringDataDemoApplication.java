@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.ui.UI;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com"})
 public class SpringDataDemoApplication {
 	
 	

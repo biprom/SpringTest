@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 
 @Configuration
-@EnableMongoRepositories
+@EnableMongoRepositories(value = "com.dao")
 public class MongoConfiguration extends AbstractMongoConfiguration {
 
 	
