@@ -28,14 +28,11 @@ public class MainUI extends UI{
 	protected void init(VaadinRequest request) {
 		// TODO Auto-generated method stub
 		
-		personRepository.deleteAll();
+			personRepository.deleteAll();
 		
-		Person testpersoon = new Person();
-		testpersoon.setFirstName("Jolien");
-		testpersoon.setLastName("Callens");
-		testpersoon.setUserDate(new Date());
+			personRepository.insert(new Person(new Date(), "Jolien", "Callens"));
+			personRepository.insert(new Person(new Date(), "Brambie", "Vandenberbie"));
 		
-		personRepository.insert(testpersoon);
 		
 		Navigator navigator = new Navigator(this, this);
 		navigator.addProvider(viewProvider);

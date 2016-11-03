@@ -13,6 +13,12 @@ import org.springframework.data.annotation.Id;
 @Document
 public class Person {
 	
+	public Person(Date userDate, String firstName, String lastName) {
+		this.userDate = userDate;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	@Id
 	private String Id;
 	
